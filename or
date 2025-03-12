@@ -1,0 +1,10 @@
+input: '1000'
+blank: ' '
+start state: first
+table:
+  first:
+    0: {write: 0, R:}    
+    1: {write: 1, R: 1}
+    ' ': {write: 1, R: 0}
+  0:
+  1:
