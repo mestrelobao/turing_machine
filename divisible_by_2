@@ -1,0 +1,14 @@
+# Checks if a binary number is divisible by 2. check if even of odd...
+input: '1000010'
+blank: ' '
+
+start state: q0
+table:
+  q0:
+ 
+    [1,0]: R
+    ' '  : {L: q1}
+  q1:
+    0: {R: accept}
+    1: {R:} 
+  accept:
